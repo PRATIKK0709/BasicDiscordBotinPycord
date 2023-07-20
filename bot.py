@@ -17,4 +17,4 @@ async def ping(ctx):
     bot_ping = round(bot.latency * 1000, 2)
     await ctx.send(f"Bot latency is {bot_ping}ms")
 
-bot.run("TOKEN")
+bot.run(os.getenv('TOKEN')) # run the bot with the token
