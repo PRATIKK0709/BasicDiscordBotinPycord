@@ -1,10 +1,9 @@
 import discord
-import sys, time
-import datetime
 from discord.ext import commands
 from discord.ext import bridge
-import datetime
-import logging
+import os 
+from dotenv import load_dotenv
+import sys
 intents = discord.Intents.all()
 bot = bridge.Bot(command_prefix=".", intents=intents)
 
